@@ -1,0 +1,220 @@
+<p></p>
+<p></p>
+<div>
+ <style><!--
+  .carousel-wrapper {
+  position: relative;
+  max-width: 1400px;
+  margin: auto;
+  background-color: #f8fafc;
+  padding: 30px 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  }
+
+  .carousel-title {
+  text-align: center;
+  color: #1a365d;
+  font-family: Georgia, serif;
+  margin-bottom: 20px;
+  }
+
+  .noticias-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding: 20px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #1a365d #e2e8f0;
+  }
+
+  .noticias-carousel::-webkit-scrollbar {
+  height: 10px;
+  }
+
+  .noticias-carousel::-webkit-scrollbar-track {
+  background: #e2e8f0;
+  border-radius: 5px;
+  margin: 0 20px;
+  }
+
+  .noticias-carousel::-webkit-scrollbar-thumb {
+  background: #1a365d;
+  border-radius: 5px;
+  }
+
+  .noticia-card {
+  flex: 0 0 90%;
+  scroll-snap-align: center;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  }
+
+  @media (min-width: 768px) {
+  .noticia-card {
+  flex: 0 0 calc(50% - 10px);
+  scroll-snap-align: start;
+  }
+  }
+
+  @media (min-width: 1024px) {
+  .noticia-card {
+  flex: 0 0 calc(33.333% - 14px);
+  scroll-snap-align: start;
+  }
+  }
+
+  .noticia-card:hover {
+  transform: translateY(-5px);
+  }
+
+  .card-body {
+  padding: 20px;
+  border-top: 5px solid #1a365d;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  }
+
+  .card-meta {
+  font-size: 0.85rem;
+  color: #d4af37;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  }
+
+  .iframe-container {
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  }
+
+  iframe {
+  width: 100% !important;
+  max-width: 100%;
+  border-radius: 8px;
+  }
+
+  .card-text {
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: auto;
+  padding: 15px;
+  background: #f1f5f9;
+  border-radius: 8px;
+  }
+
+  .carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1a365d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 10;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+  }
+
+  .carousel-btn:hover {
+  opacity: 1;
+  }
+
+  .prev-btn { left: 15px; }
+  .next-btn { right: 15px; }
+
+  @media (min-width: 768px) {
+  .carousel-btn {
+  display: flex;
+  }
+  .carousel-wrapper {
+  padding: 30px 40px;
+  }
+  }
+  --></style>
+</div>
+<div class="carousel-wrapper">
+ <h1 class="carousel-title">Noticias ISIP-UCE</h1>
+ <button class="carousel-btn prev-btn" onclick="scrollCarousel(-1)">❮</button> <button class="carousel-btn next-btn" onclick="scrollCarousel(1)">❯</button>
+ <div id="noticiasCarousel" class="noticias-carousel">
+  <div class="noticia-card">
+   <div class="card-body">
+    <div class="card-meta">Investiga UCE</div>
+    <div class="iframe-container"><iframe width="500" height="723" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FInvestigaUCE%2Fposts%2Fpfbid03U2xsEXdG8vyvW4KRp14LR5k2ZeNt5EDBYbBW8Jwmp2qGkXrL84PGSevHarptqp9l&amp;show_text=true&amp;width=500" scrolling="no" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+     </iframe></div>
+    <div class="card-text"><strong>Resumen:</strong> Participaci&oacute;n del grupo ISIP en casa abierta de investigaci&oacute;n.</div>
+   </div>
+  </div>
+  <div class="noticia-card">
+   <div class="card-body">
+    <div class="card-meta">Nueva noticia</div>
+    <div class="iframe-container"><iframe width="500" height="812" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D24982799258046604%26set%3Da.1399950166758178%26type%3D3&amp;show_text=true&amp;width=500" scrolling="no" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+     </iframe></div>
+    <div class="card-text"><strong>Resumen:</strong>Invitaci&oacute;n por parte del Ministerio de Salud P<span></span>&uacute;blica del Ecuador.</div>
+   </div>
+  </div>
+  <div class="noticia-card">
+   <div class="card-body">
+    <div class="card-meta">Premio investigaci&oacute;n #1</div>
+    <div class="iframe-container"><iframe width="600" height="444" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsantiago.vm2%2Fposts%2Fpfbid02t3BYYkKVCnJjbNhGgT3rmLykrZXmexbJD6PsocfeF6h6fSABiWYYTPoCnHCWvxD6l&amp;show_text=true&amp;width=600" scrolling="no" frameborder="0" allowfullscreen="allowfullscreen">
+     </iframe></div>
+    <div class="card-text"><strong>Resumen:</strong> Resultados iniciales de estudio sobre mortalidad neonatal.</div>
+   </div>
+  </div>
+  <div class="noticia-card">
+   <div class="card-body">
+    <div class="card-meta">Ponencia salud sexual y reproductiva en adolescentes</div>
+    <div class="iframe-container"><iframe width="600" height="772" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsantiago.vm2%2Fposts%2Fpfbid02R2LyT58utU1rkoML45vw4j6tjGxfhKcDuSdbDDEUZrGJZgAbB8eqoMcvki6L6b4sl&amp;show_text=true&amp;width=600" scrolling="no" frameborder="0" allowfullscreen="allowfullscreen">
+     </iframe></div>
+    <div class="card-text"><strong>Resumen:</strong> Esta presentaci&oacute;n detalla la importancia de la intervenci&oacute;n temprana en salud p&uacute;blica.</div>
+   </div>
+  </div>
+  <div class="noticia-card">
+   <div class="card-body">
+    <div class="card-meta">Premio investigaci&oacute;n</div>
+    <div class="iframe-container"><iframe width="600" height="731" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsantiago.vm2%2Fposts%2Fpfbid025qeDC6nzRq4qAPZoTfvWNLLG8yHHXdUq3KuM2X6VTogu27zdiEhyVFwzqXPYms3l&amp;show_text=true&amp;width=600" scrolling="no" frameborder="0" allowfullscreen="allowfullscreen">
+     </iframe></div>
+    <div class="card-text"><strong>Resumen:</strong> Resultados preliminares estudio de la mortalidad en el periodo neonatal.</div>
+   </div>
+  </div>
+  <div class="noticia-card">
+   <div class="card-body">
+    <div class="card-meta">Presentacion en: American Academy of Pediatrics</div>
+    <div class="iframe-container"><iframe width="600" height="518" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsantiago.vm2%2Fposts%2Fpfbid02zH73APWbpaidzsa6hC9bkKKoABWCs79ErMDCoM2iYeGtQ6KktF49DjcmMYAoxmQfl&amp;show_text=true&amp;width=600" scrolling="no" frameborder="0" allowfullscreen="allowfullscreen">
+     </iframe></div>
+    <div class="card-text"><strong>Resumen:</strong> Presentaci&oacute;n de hallazgos en foros universitarios. Discusi&oacute;n sobre la aplicaci&oacute;n de nuevas tecnolog&iacute;as en el monitoreo neonatal.</div>
+   </div>
+  </div>
+ </div>
+</div>
+<p>
+ <script>// <![CDATA[
+  function scrollCarousel(direction) {
+   const carousel = document.getElementById('noticiasCarousel');
+   const cardWidth = carousel.querySelector('.noticia-card').offsetWidth + 20;
+   carousel.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+  }
+  // ]]></script>
+</p>
+<p><span></span></p>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1d4fd7",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111521",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-slate-200 font-display text-slate-900 overflow-hidden">
+<!-- Background Mockup (Blurred Content) -->
+<div class="fixed inset-0 z-0 flex flex-col filter blur-sm">
+<header class="flex items-center justify-between border-b border-solid border-slate-200 bg-white px-10 py-3">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-slate-900">
+<span class="material-symbols-outlined text-primary">menu_book</span>
+<h2 class="text-lg font-bold">Neonatology &amp; Obstetrics Hub</h2>
+</div>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<div class="h-10 w-64 bg-slate-100 rounded-lg"></div>
+<div class="h-10 w-24 bg-primary rounded-lg"></div>
+</div>
+</header>
+<main class="p-10 flex flex-col gap-6">
+<div class="h-64 w-full bg-white rounded-xl"></div>
+<div class="grid grid-cols-3 gap-6">
+<div class="h-48 bg-white rounded-xl"></div>
+<div class="h-48 bg-white rounded-xl"></div>
+<div class="h-48 bg-white rounded-xl"></div>
+</div>
+</main>
+</div>
+<!-- Overlay Dimmer -->
+<div class="fixed inset-0 z-10 bg-slate-900/60 backdrop-blur-sm flex justify-center items-start overflow-y-auto pt-10 pb-10">
+<!-- Detailed View Modal -->
+<div class="relative w-full max-w-[960px] bg-background-light rounded-xl shadow-2xl overflow-hidden mb-10">
+<!-- Close Button -->
+<button class="absolute top-4 right-4 z-30 bg-white/20 hover:bg-white/40 backdrop-blur-md text-white rounded-full p-2 transition-colors">
+<span class="material-symbols-outlined">close</span>
+</button>
+<!-- Hero Image Section -->
+<div class="relative h-[400px] w-full bg-slate-800">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Close up of a medical neonatal intensive care unit incubator" style='background-image: linear-gradient(0deg, rgba(17, 21, 33, 0.8) 0%, rgba(17, 21, 33, 0) 50%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC2yrKZcj0hKo0iENfrHErj5DEWTIIz-bBRBxeekf58O-GN1yJ4q1yox7qCFdyeM4FtJZWTn5sZDMJnai4QHuFi-SbiN88RjwaTZHk_S4Lf4jT6nkXNLP2okQibKal5dptBPYSIkPCixYGHmguOGaiaS64PUzu1JyL9e_zXjmgZ2QwRuokhyLdHWrwoKcce8S_H89oRgNiPJUztsHzKiT7ncYlYGbs2TmS_l7E9H6SEYP44uyh2bJjTOenxtzwa7a7H_SZBhqEoGJo");'></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-primary text-white text-xs font-bold rounded-full uppercase tracking-wider">Neonatología</span>
+<span class="px-3 py-1 bg-white/20 backdrop-blur-md text-white text-xs font-bold rounded-full uppercase tracking-wider">Peer Reviewed</span>
+</div>
+<h1 class="text-white text-4xl font-black leading-tight tracking-tight max-w-3xl">Advanced Respiratory Support in Preterm Infants: A Comprehensive Review</h1>
+</div>
+</div>
+<!-- Content Area -->
+<div class="p-8 space-y-8">
+<!-- Metadata Row -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 border-b border-slate-200 pb-8">
+<div class="flex flex-col gap-2">
+<p class="text-slate-600 text-base font-medium">
+                            Publicado en <span class="text-primary font-bold">Journal of Neonatology</span>
+</p>
+<p class="text-slate-500 text-sm">
+                            Autores: <span class="text-slate-900">Dr. Elena Rodriguez, Dr. Marcus Thorne</span>
+</p>
+<div class="flex items-center gap-2 text-primary/80 text-sm">
+<span class="material-symbols-outlined text-sm">link</span>
+<a class="hover:underline" href="#">DOI: 10.1038/s41372-023-01614-2</a>
+</div>
+</div>
+<button class="flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white rounded-lg font-bold shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all active:scale-95">
+<span class="material-symbols-outlined">download</span>
+<span>Descargar PDF</span>
+</button>
+</div>
+<!-- Structured Content Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Section 1 -->
+<div class="bg-white p-6 rounded-lg shadow-sm border border-slate-100">
+<div class="flex items-center gap-3 mb-4">
+<div class="bg-primary/10 p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary">clinical_notes</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900">¿Cuál es su enfoque?</h3>
+</div>
+<p class="text-slate-600 leading-relaxed">
+                            Este estudio analiza las transiciones entre la ventilación mecánica invasiva y las estrategias no invasivas de vanguardia. Se centra en la optimización de los parámetros de CPAP y el uso de ventilación de alta frecuencia para minimizar el daño pulmonar crónico en neonatos de extremadamente bajo peso al nacer, integrando datos clínicos recolectados durante un periodo de 5 años.
+                        </p>
+</div>
+<!-- Section 2 -->
+<div class="bg-white p-6 rounded-lg shadow-sm border border-slate-100">
+<div class="flex items-center gap-3 mb-4">
+<div class="bg-primary/10 p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary">star</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900">¿Por qué es relevante?</h3>
+</div>
+<p class="text-slate-600 leading-relaxed">
+                            La displasia broncopulmonar sigue siendo la complicación más frecuente en la medicina neonatal moderna. La implementación de los protocolos sugeridos en este artículo ha demostrado una reducción del 15% en el tiempo de hospitalización y una mejora significativa en los índices de neurodesarrollo a los 24 meses, estableciendo un nuevo estándar de cuidado basado en evidencia.
+                        </p>
+</div>
+</div>
+<!-- References & Tags -->
+<div class="pt-4">
+<h4 class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-4">Palabras Clave</h4>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-slate-200 text-slate-700 text-xs font-medium rounded-full">Respiración Mecánica</span>
+<span class="px-3 py-1 bg-slate-200 text-slate-700 text-xs font-medium rounded-full">Cuidados Intensivos</span>
+<span class="px-3 py-1 bg-slate-200 text-slate-700 text-xs font-medium rounded-full">Prematuridad</span>
+<span class="px-3 py-1 bg-slate-200 text-slate-700 text-xs font-medium rounded-full">Biomarcadores</span>
+</div>
+</div>
+</div>
+<!-- Footer Action -->
+<div class="bg-slate-50 border-t border-slate-200 p-6 flex justify-between items-center">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">share</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">bookmark</span>
+</div>
+</div>
+<button class="text-slate-500 hover:text-primary font-bold text-sm flex items-center gap-1 transition-colors">
+                    Ver bibliografía completa
+                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>
